@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background_option">
+  
+	<!-- admob -->
+	<!-- <LinearLayout
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:gravity="center">
+		 	<com.google.ads.AdView
+				xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+				xmlns:myapp="http://schemas.android.com/apk/res/com.brownrice.matchtouch"
+				android:id="@+id/adView" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="20dip"
+				android:layout_gravity="center|bottom"
+				ads:adSize="BANNER" 
+				ads:adUnitId="a14f689642ad634" />
+	</LinearLayout> -->
+	
+	<LinearLayout 
+ 		android:orientation="vertical"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="fill_parent"
+ 		android:layout_marginTop="0dip">
+ 		
+ 		<!-- option title image -->
+ 		<!-- <ImageView
+ 			android:id="@+id/option_title"
+ 			android:src="@drawable/btn_menu_option_n"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_gravity="center"/> -->
+ 		
+ 		
+ 		<!-- Sound Option  -->	
+ 		<TextView 
+ 			android:id="@+id/soundset_title"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:text="@string/soundset_title"
+ 			android:textColor="#ff000000"
+ 			android:textSize="15sp"/>
+ 		<RadioGroup 
+ 			android:id="@+id/SoundGroup"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:orientation="horizontal"
+ 			android:layout_gravity="center"
+ 			android:textColor="#000000"
+ 			android:textSize="10sp">
+ 			
+ 				<RadioButton 
+ 					android:id="@+id/soundon"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:tag="1"
+ 					android:textColor="#000000"
+ 					android:text="Sound On"
+ 					/>
+ 				<RadioButton 
+ 					android:id="@+id/soundoff"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="10dip"
+ 					android:tag="2"
+ 					android:textColor="#000000"
+ 					android:text="Sound Off"
+ 					/>
+ 		</RadioGroup>
+ 			
+ 			
+ 		<!--  Vibration Option -->
+ 		<TextView 
+ 			android:id="@+id/vibset_title"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:text="@string/vibset_title"
+ 			android:textColor="#ff000000"
+ 			android:textSize="15sp"/>
+ 		<RadioGroup 
+ 			android:id="@+id/VibGroup"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:orientation="horizontal"
+ 			android:layout_gravity="center"
+ 			android:textColor="#000000"
+ 			android:textSize="10sp">
+ 			
+ 				<RadioButton 
+ 					android:id="@+id/vibon"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:tag="1"
+ 					android:textColor="#000000"
+ 					android:text="Vibration On"/>
+ 				<RadioButton 
+ 					android:id="@+id/viboff"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="10dip"
+ 					android:tag="2"
+ 					android:textColor="#000000"
+ 					android:text="Vibration Off"/>
+ 		</RadioGroup>
+ 		
+ 		<!--  Life Option -->
+ 		<!-- <TextView 
+ 			android:id="@+id/life_title"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:text="@string/life_title"
+ 			android:textColor="#000000"
+ 			android:textSize="15sp"/>
+ 		<RadioGroup 
+ 			android:id="@+id/LifeGroup"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:orientation="horizontal"
+ 			android:layout_gravity="center"
+ 			android:textColor="#000000"
+ 			android:textSize="10sp">
+ 			
+ 				<RadioButton 
+ 					android:id="@+id/gamemode_hard"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="0dip"
+ 					android:tag="3"
+ 					android:textColor="#000000"
+ 					android:text="3EA"/>
+ 				<RadioButton 
+ 					android:id="@+id/gamemode_normal"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="10dip"
+ 					android:tag="6"
+ 					android:textColor="#000000"
+ 					android:text="6EA"/>
+ 				<RadioButton 
+ 					android:id="@+id/gamemode_easy"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="10dip"
+ 					android:tag="9"
+ 					android:textColor="#000000"
+ 					android:text="9EA"/>
+ 		</RadioGroup> -->
+ 		
+ 		<!--  Game speed Option -->
+ 		<!-- <TextView 
+ 			android:id="@+id/gamespeed_title"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:text="@string/gamespeed_title"
+ 			android:textColor="#000000"
+ 			android:textSize="15sp"/>
+ 		<RadioGroup 
+ 			android:id="@+id/GameSpeedGroup"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="wrap_content"
+ 			android:orientation="horizontal"
+ 			android:layout_gravity="center"
+ 			android:textColor="#000000"
+ 			android:textSize="10sp">
+ 			
+ 				<RadioButton 
+ 					android:id="@+id/gamespeed_slow"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="0dip"
+ 					android:tag="1"
+ 					android:textColor="#000000"
+ 					android:text="SLOW"/>
+ 				<RadioButton 
+ 					android:id="@+id/gamespeed_medium"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="10dip"
+ 					android:tag="2"
+ 					android:textColor="#000000"
+ 					android:text="MEDIUM"/>
+ 				<RadioButton 
+ 					android:id="@+id/gamespeed_fast"
+ 					android:layout_width="wrap_content"
+ 					android:layout_height="wrap_content"
+ 					android:layout_marginLeft="10dip"
+ 					android:tag="3"
+ 					android:textColor="#000000"
+ 					android:text="FAST"/>
+ 					
+ 		</RadioGroup> -->
+ 		
+ 		<!-- 저장 버튼 -->
+ 		<ImageView
+			android:id="@+id/SaveSettings"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dip"
+			android:src="@drawable/btn_menu_option_save"/>
+ 		
+ 		<!-- admin 용 임시 -->
+ 		<Button 
+ 		    android:id="@+id/admin"
+ 		    android:layout_width="wrap_content"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_gravity="center"
+ 		    android:layout_marginTop="20dip"
+ 		    android:text="admin - all clear"/>
+ 	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background_main_menu">
+  
+  	<LinearLayout 
+  		android:orientation="vertical"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_gravity="center"
+  		android:layout_weight="1">
+  		
+  		<ImageView
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_marginTop="10dip"
+  			android:src="@drawable/main_title"/>
+  			
+  	</LinearLayout>
+    
+    <LinearLayout 
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_gravity="center"
+  		android:layout_weight="1">
+  		
+  		<LinearLayout 
+  			android:orientation="vertical"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_weight="1"
+  			android:gravity="center">
+	  		
+	  		<!-- start -->
+	  		<ImageView
+	  			android:id="@+id/start"
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:src="@drawable/btn_menu_start"/>
+	  			
+  		</LinearLayout>
+  		
+  		<LinearLayout 
+  	        android:orientation="vertical"
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="fill_parent"
+  	        android:layout_weight="1">
+  	       	
+  	       	<!-- stage -->
+  	       	<ImageView
+  	       		android:id="@+id/stage"
+  	       		android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:src="@drawable/btn_menu_stage"/>
+	  			
+	  		<!-- option -->
+	  		<ImageView 
+	  			android:id="@+id/option"
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:src="@drawable/btn_menu_option"/>
+	  			
+	  		<!-- about -->
+	  		<ImageView 
+	  			android:id="@+id/about"
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:src="@drawable/btn_menu_about"/>
+	  			
+	  		<!-- exit -->
+	  		<ImageView 
+	  			android:id="@+id/exit"
+	  			android:layout_width="wrap_content"
+	  			android:layout_height="wrap_content"
+	  			android:layout_weight="1"
+	  			android:src="@drawable/btn_menu_exit"/>
+	  			
+  	    </LinearLayout>
+  	    
+  	  <!--   <LinearLayout 
+  	    	android:android:orientation="vertical"
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="fill_parent"
+  	        android:layout_weight="1">
+  	    </LinearLayout> -->
+  	    
+  	</LinearLayout>
+    
+    
+    <!-- admob -->
+  	<!-- <LinearLayout
+ 		android:orientation="vertical"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:layout_gravity="bottom"
+ 		android:layout_marginTop="1dip"
+ 		android:layout_weight="1">   	
+  						
+  			<com.google.ads.AdView
+	    		xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	    		xmlns:myapp="http://schemas.android.com/apk/res/com.brownrice.matchtouch"
+	    		android:id="@+id/adView"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_gravity="center|bottom" 
+	    		ads:adSize="BANNER"
+	    		ads:adUnitId=""
+	    		android:layout_weight="2"/>
+	    		
+  	</LinearLayout> -->
+  	
+</LinearLayout>

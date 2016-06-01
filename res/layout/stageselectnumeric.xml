@@ -1,0 +1,2878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background_stage_selection_each">
+  
+    <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+	  
+		<LinearLayout 
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				
+				<!-- <com.google.ads.AdView
+				    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+					xmlns:myapp="http://schemas.android.com/apk/res/com.brownrice.matchtouch"
+					android:id="@+id/adView" 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginBottom="20dip"
+					android:background="#aa00ff00"
+					android:layout_gravity="center|bottom" 
+					ads:adSize="BANNER" 
+					ads:adUnitId="" /> -->
+					
+				<ImageView 
+					android:src="@drawable/btn_stage_select_numeric_normal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_gravity="center"/>
+		</LinearLayout>
+			
+			
+			<!-- stage 1 ~ 3 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 1 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_01"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_01"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_01"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="01"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_01"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_01"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_01"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_01"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 1 end -->
+				
+				<!-- stage 2 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_02"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_02"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_02"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="02"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_02"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_02"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_02"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_02"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 2 end -->
+				
+				<!-- stage 3 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_03"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_03"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_03"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="03"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_03"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_03"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_03"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_03"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 3 end -->
+			</LinearLayout> <!--  stage 1 ~ 3 end -->
+			
+			
+			<!-- stage 4 ~ 6 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 4 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_04"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_04"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_04"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="04"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_04"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_04"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_04"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_04"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 4 end -->
+				
+				<!-- stage 5 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_05"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_05"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_05"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="05"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_05"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_05"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_05"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_05"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 5 end -->
+				
+				<!-- stage 6 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_06"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_06"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_06"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="06"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_06"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_06"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_06"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_06"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 6 end -->
+			</LinearLayout> <!--  stage 4 ~ 6 end -->
+			
+			
+			<!-- stage 7 ~ 9 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 7 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_07"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_07"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_07"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="07"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_07"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_07"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_07"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_07"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 7 end -->
+				
+				<!-- stage 8 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_08"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_08"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_08"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="08"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_08"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_08"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_08"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_08"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 8 end -->
+				
+				<!-- stage 9 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_09"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_09"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_09"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="09"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_09"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_09"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_09"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_09"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 9 end -->
+			</LinearLayout> <!--  stage 7 ~ 9 end -->
+			
+			
+			<!-- stage 10 ~ 12 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 10 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_10"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_10"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_10"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="10"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_10"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_10"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_10"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_10"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 10 end -->
+				
+				<!-- stage 11 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_11"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_11"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_11"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="11"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_11"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_11"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_11"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_11"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 11 end -->
+				
+				<!-- stage 12 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_12"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_12"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="12"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_12"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_12"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_12"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 12 end -->
+			</LinearLayout> <!--  stage 10 ~ 12 end -->
+			
+			
+			<!-- stage 13 ~ 15 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 13 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_13"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_13"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_13"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="13"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_13"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_13"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_13"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_13"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 13 end -->
+				
+				<!-- stage 14 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_14"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_14"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_14"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="14"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_14"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_14"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_14"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_14"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 14 end -->
+				
+				<!-- stage 15 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_15"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_15"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_15"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="15"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_15"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_15"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_15"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_15"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 15 end -->
+			</LinearLayout> <!--  stage 13 ~ 15 end -->
+			
+			
+			<!-- stage 16 ~ 18 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 16 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_16"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_16"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_16"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="16"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_16"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_16"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_16"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_16"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 16 end -->
+				
+				<!-- stage 17 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_17"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_17"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_17"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="17"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_17"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_17"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_17"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_17"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 17 end -->
+				
+				<!-- stage 18 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_18"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_18"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_18"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="18"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_18"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_18"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_18"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_18"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 18 end -->
+			</LinearLayout> <!--  stage 16 ~ 18 end -->
+			
+			
+			<!-- stage 19 ~ 21 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 19 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_19"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_19"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_19"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="19"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_19"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_19"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_19"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_19"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 19 end -->
+				
+				<!-- stage 20 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_20"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_20"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_20"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="20"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_20"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_20"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_20"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_20"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 20 end -->
+				
+				<!-- stage 21 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_21"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_21"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_21"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="21"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_21"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_21"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_21"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_21"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 21 end -->
+			</LinearLayout> <!--  stage 19 ~ 21 end -->
+			
+			
+			<!-- stage 22 ~ 24 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 22 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_22"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_22"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_22"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="22"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_22"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_22"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_22"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_22"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 22 end -->
+				
+				<!-- stage 23 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_23"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_23"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_23"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="23"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_23"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_23"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_23"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_23"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 23 end -->
+				
+				<!-- stage 24 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_24"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_24"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_24"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="24"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_24"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_24"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_24"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_24"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 24 end -->
+			</LinearLayout> <!--  stage 22 ~ 24 end -->
+			
+			
+			<!-- stage 25 ~ 27 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 25 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_25"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_25"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_25"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="25"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_25"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_25"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_25"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_25"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 25 end -->
+				
+				<!-- stage 26 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_26"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_26"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_26"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="26"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_26"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_26"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_26"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_26"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 26 end -->
+				
+				<!-- stage 27 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_27"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_27"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_27"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="27"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_27"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_27"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_27"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_27"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 27 end -->
+			</LinearLayout> <!--  stage 25 ~ 27 end -->
+			
+			
+			<!-- stage 28 ~ 30 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 28 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_28"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_28"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_28"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="28"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_28"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_28"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_28"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_28"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 28 end -->
+				
+				<!-- stage 29 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_29"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_29"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_29"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="29"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_29"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_29"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_29"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_29"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 29 end -->
+				
+				<!-- stage 30 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_30"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_30"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_30"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="30"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_30"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_30"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_30"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_30"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 30 end -->
+			</LinearLayout> <!--  stage 28 ~ 30 end -->
+			
+			
+			<!-- stage 31 ~ 33 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 31 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_31"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_31"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_31"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="31"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_31"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_31"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_31"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_31"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 31 end -->
+				
+				<!-- stage 32 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_32"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_32"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_32"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="32"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_32"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_32"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_32"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_32"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 32 end -->
+				
+				<!-- stage 33 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_33"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_33"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_33"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="33"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_33"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_33"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_33"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_33"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 33 end -->
+			</LinearLayout> <!--  stage 31 ~ 33 end -->
+			
+			
+			<!-- stage 34 ~ 36 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 34 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_34"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_34"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_34"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="34"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_34"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_34"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_34"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_34"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 34 end -->
+				
+				<!-- stage 35 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_35"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_35"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_35"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="35"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_35"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_35"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_35"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_35"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 35 end -->
+				
+				<!-- stage 36 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_36"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_36"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_36"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="36"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_36"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_36"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_36"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_36"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 36 end -->
+			</LinearLayout> <!--  stage 34 ~ 36 end -->
+			
+			
+			<!-- stage 37 ~ 39 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 37 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_37"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_37"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_37"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="37"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_37"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_37"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_37"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_37"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 37 end -->
+				
+				<!-- stage 38 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_38"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_38"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_38"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="38"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_38"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_38"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_38"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_38"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 38 end -->
+				
+				<!-- stage 39 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_39"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_39"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_39"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="39"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_39"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_39"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_39"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_39"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 39 end -->
+			</LinearLayout> <!--  stage 37 ~ 39 end -->
+			
+			
+			<!-- stage 40 -->
+			<LinearLayout 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:layout_marginTop="30dip"
+				android:layout_weight="1"
+				android:orientation="horizontal"
+				android:gravity="center">
+				
+				<!-- stage 40 -->
+				<RelativeLayout 
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:layout_weight="1">
+					
+					<FrameLayout
+						android:id="@+id/stage_frame_40"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center">
+						<ImageView
+								android:id="@+id/stage_40"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:background="@drawable/stage_lock_back"/>	
+						<TextView 
+								android:id="@+id/stage_text_40"
+								android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:visibility="invisible"
+								android:text="40"
+								android:textSize="13sp"
+								android:textColor="#FFFFFF00"
+								android:textStyle="bold"
+								android:shadowColor="#FF000000"
+								android:shadowDx="1.5"
+								android:shadowDy="1.5"/>
+					</FrameLayout>
+					
+					<TextView 
+						android:id="@+id/stage_score_40"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_frame_40"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>
+												
+				    <TextView 
+						android:id="@+id/stage_sec_40"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_below="@id/stage_score_40"
+						android:visibility="invisible"
+						android:text="0"
+						android:textSize="10sp"
+						android:textStyle="bold"
+						android:textColor="#FFEEEEEE"
+						android:shadowColor="#FF000000"
+						android:shadowRadius="2.0"
+						android:shadowDx="1.5"
+						android:shadowDy="1.5"/>		
+				</RelativeLayout> <!-- stage 40 end -->
+			</LinearLayout> <!--  stage 40 end -->
+			
+			
+	</LinearLayout>
+    
+</ScrollView>

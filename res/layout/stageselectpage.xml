@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background_stage_selection">
+    
+    <LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="vertical"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent">
+	  
+	    <LinearLayout 
+	    	android:orientation="vertical" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent">
+	    	
+	    		<!--  admob  -->
+			    <!-- <com.google.ads.AdView
+						xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+						xmlns:myapp="http://schemas.android.com/apk/res/com.brownrice.matchtouch"
+						android:id="@+id/adView" 
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginBottom="20dip"
+						android:layout_gravity="center|bottom" 
+						android:visibility="visible"
+						ads:adSize="BANNER" 
+						ads:adUnitId="" /> -->
+		</LinearLayout>
+	
+		<LinearLayout 
+	    	android:orientation="vertical" 
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent">	
+				
+				<ImageView 
+					android:id="@+id/stage_numeric"
+					android:src="@drawable/btn_stage_select_numeric"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_marginTop="20dip"
+			    	android:layout_gravity="center"
+		  			android:layout_weight="1"/>
+		  			
+		  		<ImageView 
+					android:id="@+id/stage_animal"
+					android:src="@drawable/btn_stage_select_animal"
+			    	android:layout_width="wrap_content"
+			    	android:layout_height="wrap_content"
+			    	android:layout_marginTop="55dip"
+			    	android:layout_gravity="center"
+		  			android:layout_weight="1"/>
+		  			
+		  		<ImageView
+		  			android:id="@+id/stage_transport"
+		  			android:src="@drawable/btn_stage_select_transport"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+			    	android:layout_marginTop="55dip"
+			    	android:layout_gravity="center"
+		  			android:layout_weight="1"/>
+		  		
+		  		<ImageView
+		  			android:id="@+id/stage_face"
+		  			android:src="@drawable/btn_stage_select_face"
+		  			android:layout_width="wrap_content"
+		  			android:layout_height="wrap_content"
+			    	android:layout_marginTop="55dip"
+			    	android:layout_gravity="center"
+		  			android:layout_weight="1"/>
+			
+	    </LinearLayout>
+	</LinearLayout>
+</ScrollView>
